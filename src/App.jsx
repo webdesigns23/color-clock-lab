@@ -4,17 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {format} from 'date-fns'
 
-
+//Clock function
 function Clock(){
   const today = new Date()
 
   return (
-    <>
+    <> 
       <p>
-        {format(today, 'PPpp')}
+         Current Date & Time:<br></br><br></br>{format(today, 'PPpp')}
       </p>             
     </>
   )
 }
 
 export default Clock
+
